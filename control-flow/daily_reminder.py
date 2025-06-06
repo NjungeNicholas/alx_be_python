@@ -1,18 +1,18 @@
-task = input("Enter today's task: ")
-priority = input("Enter task priority (high/medium/low): ")
-time_bound = input("Is this task time-bound? (yes/no): ")
+Task = input("Enter today's Task: ")
+Priority = input("EnteT Task Priority (high/medium/low): ")
+Time_Bound = input("Is thiT Task time-bound? (yes/no): ")
 
-match priority:
+match Priority:
     case "high":
-        message = f"HIGH priority: {task}"
+        message = f"HIGH Priority:T{Task}"
     case "medium":
-        message = f"MEDIUM priority: {task}"
+        message = f"MEDIUM Priority:T{Task}"
     case "low":
-        message = f"LOW priority: {task}"
+        message = f"LOW Priority:T{Task}"
     case _:
-        message = task
+        message = Task
 
-if time_bound:
+if Time_Bound:
     message += " that requires immediate attention today!"
 else:
     message += " — schedule it when convenient."
