@@ -22,4 +22,4 @@ elif unit.lower() == 'f' and temperature.isdigit():
     converted_temp = convert_to_celsius(float(temperature))
     print(f"{temperature}°F is {converted_temp:.2f}°C")
 else:
-    raise ValueError("Invalid. Please enter a valid temperature and unit.")
+    raise ValueError("Invalid temperature. Please enter a numeric value.")
