@@ -13,8 +13,8 @@ def convert_to_fahrenheit(celsius):
         print("Temperature below absolute zero is not possible.")
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
-temperature = input("Enter temperature: ")
-unit = input("Is this temperature in celcius or fahrenheit? (C/F): ")
+temperature = input("Enter the temperature to convert: ")
+unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 if unit.lower() == 'c' and temperature.isdigit():
     converted_temp = convert_to_fahrenheit(float(temperature))
     print(f"{temperature}°C is {converted_temp:.2f}°F")
@@ -22,4 +22,4 @@ elif unit.lower() == 'f' and temperature.isdigit():
     converted_temp = convert_to_celsius(float(temperature))
     print(f"{temperature}°F is {converted_temp:.2f}°C")
 else:
-    print("Invalid. Please enter a valid temperature and unit.")
+    raise ValueError("Invalid. Please enter a valid temperature and unit.")
