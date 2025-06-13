@@ -1,4 +1,6 @@
-import datetime
+from datetime import datetime
+from datetime import timedelta
+
 
 # Function to display the current date and time
 def display_current_datetime():
