@@ -31,10 +31,8 @@ class PrintBook(Book):
 
 
 class Library:
-    books: list[Book, EBook, PrintBook]
-
-    def __init__(self, books = None):
-        self.books = books if books is not None else []
+    def __init__(self):
+        self.books = []
 
     def add_book(self, book: Book):
         self.books.append(book)
